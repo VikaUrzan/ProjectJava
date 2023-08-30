@@ -2,21 +2,22 @@ package Lesson2;
 
 public class MathOperation {
 
-    public int sum (int[] array){
+    public int sum(int[] array) {
         int sum = 0;
         int i;
 
-        for (i=0; i <array.length; i++ )
+        for (i=0; i < array.length; i++)
             sum +=array[i];
 
         return sum;
 
     }
 
-    public int min (int[] array){
+    public int min(int[] array) {
         int min = array[0];
 
-        for (int i=0; i<array.length; i++){
+        for (int i=1; i < array.length; i++) {
+
             if (array[i] < min)
                 min = array[i];
         }
@@ -24,10 +25,11 @@ public class MathOperation {
         return min;
     }
 
-    public int max (int[] array){
+    public int max(int[] array) {
         int max = array[0];
 
-        for (int i=0; i<array.length; i++){
+        for (int i=0; i < array.length; i++) {
+
             if (array[i] > max)
                 max = array[i];
         }
@@ -35,12 +37,12 @@ public class MathOperation {
         return max;
     }
 
-    public int maxPositive(int array[]){
-        int maxPositive = array[0];
+    public long maxPositive(int[] array) {
+        long maxPositive = array[0];
 
-        for (int i=0; i<array.length; i++){
-            if (array[i] < 0)
-                continue;
+        for (int i=0; i < array.length; i++) {
+
+            if (array[i] < 0);
             else
                 maxPositive = array[i];
 
@@ -48,32 +50,31 @@ public class MathOperation {
         return maxPositive;
     }
 
-    public int multiplication  (int array[]){
+    public int multiplication(int array[]) {
         int multiplication = 1;
 
-        for (int i=0; i<array.length; i++){
+        for (int i=0; i < array.length; i++) {
             multiplication = multiplication * array[i];
         }
         return multiplication;
     }
 
-    public double modulus(int[] array){
+    public double modulus(int[] array) {
         double firstElement = array[0];
         double lastElement = array[array.length-1];
 
-        double result = firstElement/lastElement;
-
-        return result;
+        return firstElement/lastElement;
     }
 
-    public int secondLargest(int array[]){
+    public int secondLargest(int array[]) {
         boolean Sorted = false;
         int buf;
 
-        while (!Sorted){
+        while (!Sorted) {
             Sorted = true;
-            for (int i=0; i<array.length-1; i++){
-                if (array[i] > array[i+1]){
+            for (int i=0; i < array.length-1; i++) {
+
+                if (array[i] > array[i+1]) {
                     Sorted = false;
 
                     buf = array[i];
