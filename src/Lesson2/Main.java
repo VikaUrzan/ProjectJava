@@ -2,7 +2,7 @@ package Lesson2;
 
 public class Main {
     public static void main(String[] args) {
-        int [] array = {1, 2, 7, 4, -5 };
+        int [] array = {-6, 2, 7, 4, 1 };
         MathOperation math = new MathOperation();
         System.out.println(math.sum(array));
         System.out.println(math.min(array));
