@@ -4,27 +4,32 @@ public class SpecialStudent extends CollegeStudent {
     private long secretKey;
     private String email;
 
+    public SpecialStudent(long secretKey) {
+        this.secretKey = secretKey;
+    }
+
+    public SpecialStudent(String collegeName, int rating, long id) {
+        super(collegeName, rating, id);
+    }
+
+    public SpecialStudent(String firstName, String lastName, int group) {
+        super(firstName, lastName, group);
+    }
+
     public long getSecretKey() {
         return this.secretKey;
     }
 
     public String getEmail() {
-        return this.getEmail();
+        return this.email;
     }
 
-    public void setStudentNameGroupSpecialStudent(String newFirstName, String newLastName, int newGroup) {
-        Student(newFirstName, newLastName, newGroup);
+    public void setSecretKey(long secretKey) {
+        this.secretKey = secretKey;
     }
 
-    public void setNameCoursesSpecialStudent(String newLastName, Course[] newCoursesTaken) {
-        Student(newLastName, newCoursesTaken);
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setSpecialStudent(String newCollegeName, int newRating, long newId) {
-        setCollegeStudent(newCollegeName, newRating, newId);
-    }
-
-    public void setSecretKey(long newSecretKey) {
-        this.secretKey = newSecretKey;
-    }
 }

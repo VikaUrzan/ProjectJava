@@ -5,38 +5,44 @@ public class CollegeStudent extends Student {
     private int rating;
     private long id;
 
-
-    public String getFirstNameCollegeStudent() {
-        return super.getFirstName();
+    public CollegeStudent() {
     }
 
-    public String getLastNameCollegeStudent() {
-        return super.getLastName();
+    public CollegeStudent(String collegeName, int rating, long id) {
+        this.collegeName = collegeName;
+        this.rating = rating;
+        this.id = id;
     }
 
-    public int getGroupCollegeStudent() {
-        return super.getGroup();
+    public CollegeStudent(String firstName, String lastName, int group) {
+        super(firstName, lastName, group);
     }
 
-    public Course[] getCoursesTakenCollegeStudent() {
-        return super.getCoursesTaken();
+    public CollegeStudent(String lastName, Course[] coursesTaken) {
+        super(lastName, coursesTaken);
     }
 
-    public int getAgeCollegeStudent() {
-        return super.getAge();
+    public String getCollegeName() {
+        return this.collegeName;
     }
 
-    public void setStudentNameGroupCollegeStudent(String newFirstName, String newLastName, int newGroup) {
-        Student(newFirstName, newLastName, newGroup);
+    public int getRating() {
+        return this.rating;
     }
 
-    public void setNameCoursesCollegeStudent(String newLastName, Course[] newCoursesTaken) {
-        Student(newLastName, newCoursesTaken);
+    public long getId() {
+        return this.id;
     }
 
-    public void setCollegeStudent(String newCollegeName, int newRating, long newId) {
-        this.collegeName = newCollegeName;
-        this.rating = newRating;
-        this.id = newId;
+    public void setCollegeName(String collegeName) {
+        this.collegeName = collegeName;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }
