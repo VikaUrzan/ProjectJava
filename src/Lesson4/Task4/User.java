@@ -8,6 +8,15 @@ public class User {
     private int salary;
     private String currency;
 
+    public User(String name, int balance, int monthsOfEmployment, String companyName, int salary, String currency) {
+        this.name = name;
+        this.balance = balance;
+        this.monthsOfEmployment = monthsOfEmployment;
+        this.companyName = companyName;
+        this.salary = salary;
+        this.currency = currency;
+    }
+
     public String getName() {
         return this.name;
     }
@@ -32,14 +41,28 @@ public class User {
         return this.currency;
     }
 
-    public void setUser(String newName, int newBalance, int newMonthsOfEmployment, String newCompanyName, int newSalary, String newCurrency) {
-        this.name = newName;
-        this.balance = newBalance;
-        this.monthsOfEmployment = newMonthsOfEmployment;
-        this.companyName = newCompanyName;
-        this.salary = newSalary;
-        this.currency = newCurrency;
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public void setMonthsOfEmployment(int monthsOfEmployment) {
+        this.monthsOfEmployment = monthsOfEmployment;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 
     public void paySalary() {
