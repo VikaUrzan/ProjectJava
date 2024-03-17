@@ -11,13 +11,13 @@ public class Solution {
         Course newCourseSwift = new Course(15, "Swift", "Bogdan");
         Student studentAlex = new Student("First", "Alex", 15);
         Student FirstCourses = new Student("First", new Course[1]);
-        CollegeStudent collegeStudentRating = new CollegeStudent("Dima", 10, 123456789);
-        CollegeStudent collegeStudentName = new CollegeStudent("Urzan", "Vika", 15);
-        CollegeStudent collegeStudentCourses = new CollegeStudent("Second", new Course[2]);
-        SpecialStudent specialStudentKey = new SpecialStudent(15);
-        SpecialStudent specialStudentRating = new SpecialStudent("Oleg", 25, 123445678);
-        SpecialStudent specialStudentName = new SpecialStudent("Oleg", "Third", 15);
-        SpecialStudent specialStudentKeyOleg = new SpecialStudent(456);
-        SpecialStudent specialStudentGroup1 = new SpecialStudent("Olya", "Next", 1);
+        CollegeStudent collegeStudentRatingDima = new CollegeStudent("Dima", 10, 123456789);
+        CollegeStudent collegeStudentNameUrzan = new CollegeStudent("Urzan", "Vika", 15);
+        CollegeStudent collegeStudentCoursesSecond = new CollegeStudent("Second", new Course[2]);
+        SpecialStudent specialStudentKey15 = new SpecialStudent(15);
+        SpecialStudent specialStudentRatingOleg = new SpecialStudent("Oleg", 25, 123445678);
+        SpecialStudent specialStudentNameOleg = new SpecialStudent("Oleg", "Third", 15);
+        SpecialStudent specialStudentKey456 = new SpecialStudent(456);
+        SpecialStudent specialStudentGroup1Olya = new SpecialStudent("Olya", "Next", 1);
     }
 }
